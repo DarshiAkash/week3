@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Array Methods</title>
+</head>
+<body>
+    <h3>Array Methods Demo</h3>
+    <h3 id="1"></h3>
+    <h3 id="2"></h3>
+    <h3 id="3"></h3>
+    <h3 id="4"></h3>
+    <h3 id="5"></h3>
+    <h3 id="6"></h3>
+    <h3 id="7"></h3>
+    <h3 id="8"></h3>
+    
+    <script>
+        var alp=["A","B","C","D","E"];
+        console.log("Before poping  :  "+alp);
+        document.getElementById("1").innerHTML="Before poping  :  "+alp;
+        alp.pop();
+        console.log("After  poping  :  "+alp);
+        document.getElementById("2").innerHTML="After  poping  :  "+alp;
+        alp.push("F");
+        console.log("After pushing  :  "+alp);
+        document.getElementById("3").innerHTML="After pushing  :  "+alp;
+        alp.shift();
+        console.log("After Shifting  :  "+alp);
+        document.getElementById("4").innerHTML="After Shifting  :  "+alp;
+        alp.unshift("a");
+        console.log("After UnShifting  :  "+alp);
+        document.getElementById("5").innerHTML="After UnShifting  :  "+alp;
+        
+        console.log("Length of array  :  "+alp.length);
+        document.getElementById("6").innerHTML="Length of array  :  "+alp.length;
+        
+        alp.sort();
+        document.getElementById("7").innerHTML="After Sorting array  :  "+alp;
+        
+        
+        document.getElementById("8").innerHTML="Slicing the array  :  "+alp.slice(1,3);
+        
+        
+    </script>
+</body>

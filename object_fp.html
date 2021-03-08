@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Array Destructuring</title>
+</head>
+<body>
+    <script>
+        class College
+        {
+            constructor(name,roomno,bill)
+            {
+                this.name=name;
+                this.roomno=roomno;
+                this.bill=bill;
+            }
+        }
+        function Hosp(c)
+        {
+            console.log(c.name);
+            console.log(c.roomno);
+            console.log(c.bill);
+        }
+        var c=new College("Akash",102,9800);
+        Hosp(c);
+    </script>
+</body>
